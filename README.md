@@ -20,11 +20,11 @@ The application is containerized using Docker to ensure consistent execution acr
 ## 📂 Project Structure
 
 docker-project/
-app.py                  # Flask application
-requirements.txt        # Python dependencies
-Dockerfile              # Docker build configuration
-templates/index.html    # HTML frontend
-static/style.css        # CSS styling
+-> app.py                   (Flask application)
+-> requirements.txt        (Python dependencies)
+-> Dockerfile              (Docker build configuration)
+-> templates/index.html    (HTML frontend)
+-> static/style.css        (CSS styling)
 
 ## ✨ Features
 
