@@ -18,17 +18,13 @@ The application is containerized using Docker to ensure consistent execution acr
 6. AWS EC2 (Ubuntu Instance)
 
 ## 📂 Project Structure
+
 docker-project/
-│
-├── app.py                  # Flask application
-├── requirements.txt        # Python dependencies
-├── Dockerfile              # Docker build configuration
-│
-├── templates/
-│   └── index.html          # HTML frontend
-│
-└── static/
-    └── style.css           # CSS styling
+app.py                  # Flask application
+requirements.txt        # Python dependencies
+Dockerfile              # Docker build configuration
+templates/index.html    # HTML frontend
+static/style.css        # CSS styling
 
 ## ✨ Features
 
@@ -37,7 +33,7 @@ docker-project/
 3. 🎨 Modern and responsive UI
 4. ⚡ Lightweight and easy to manage
 5. 🔁 Consistent behavior across environments
----
+
 ## 🐳 Docker Usage
 1️⃣ Build Docker Image
 docker build -t docker-project .
@@ -48,14 +44,6 @@ docker run -d -p 8080:8080 docker-project
 3️⃣ Access the Application
 http://<EC2-PUBLIC-IP>:8080
 
-🧾 Dockerfile
-FROM python:3.11-alpine
-WORKDIR /app
-COPY . /app
-RUN pip install -r reqirements.txt
-EXPOSE 8080
-ENTRYPOINT ["python"]
-CMD ["app.py"]
 ---
 ## ☁️ AWS EC2 (Ubuntu) Deployment Steps
 
@@ -74,13 +62,13 @@ sudo systemctl enable docker
 5️⃣Build and run the Docker container
 
 6️⃣Open port 8080 in the EC2 Security Group
----
+
 ## 🔌 Port Configuration
 
 1. Application runs on port 8080
 2. Docker maps container port to host port
 3. Ensure inbound rule for port 8080 is enabled in the EC2 Security Group
----
+
 ## 🧠 Learning Outcomes
 
 1. Docker image creation and container execution
@@ -93,6 +81,7 @@ sudo systemctl enable docker
 ## 📄 License
 
 This project is created for educational and learning purposes and is free to use or modify.
----
+
 ## 📊Output 
 THe Final Result can be access by http://<EC2-PUBLIC-IP>:8080 
+<img width="1366" height="768" alt="Output1" src="https://github.com/user-attachments/assets/ea3b3b1d-8b33-407d-849c-055a0423b7ad" />
